@@ -1,9 +1,10 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
+/**
+* main -n is random and printf print what is it
+* Return: 0 is sucess
+*/
 int main(void)
 {
 int n;
