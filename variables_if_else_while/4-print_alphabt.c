@@ -15,13 +15,14 @@ for (alph = 'a'; alph <= 'd'; alph++)
 {
 putchar(alph);
 }
-for (alph2 = 'f': alph2 <= 'p'; alph2++)
+for (alph2 = 'f'; alph2 <= 'p'; alph2++)
 {
 putchar(alph2);
 }
-for (alph3 = 'r': alph3 <= 'z'; alph3++)
+for (alph3 = 'r'; alph3 <= 'z'; alph3++)
 {
-pitchar(alph3)
-putchar('\n')
+putchar(alph3);
+putchar('\n');
+}
 return (0);
 }
