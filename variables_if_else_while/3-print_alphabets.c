@@ -9,7 +9,7 @@
 int main(void)
 {
 char alph;
-for (alph = 'A'; alph <= 'z'; alph++)
+for (alph = 'a'; alph <= 'Z'; alph++)
 {
 if(isalpha(alph))
 {
