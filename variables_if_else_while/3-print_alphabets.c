@@ -9,12 +9,14 @@
 int main(void)
 {
 char alph;
+char big;
 for (alph = 'a'; alph <= 'z'; alph++)
 {
-char aLPH;
-for (aLPH = 'A'; aLPH <= 'Z'; aLPH++)
 putchar(alph);
-putchar(aLPH);
+}
+for (big = 'A'; big <= 'Z'; big++)
+{
+putchar(big);
 }
 putchar('\n');
 return (0);
