@@ -15,6 +15,5 @@ if (alph == 'e' && 'q')
 continue;
 putchar(alph);
 }
-putchar('\n');
 return (0);
 }
