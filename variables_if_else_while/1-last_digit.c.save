@@ -1,0 +1,28 @@
+#include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
+/**
+* main -n is random and printf print what is it
+* Return: 0 is sucess
+*/
+int main(void)
+{
+int n;
+srand(time(0));
+n = rand() - RAND_MAX / 2;
+
+int last = n % 10
+if (n > 5)
+{
+printf("Last digit of %d is %d" , n, last)
+}
+else if ()
+{
+printf("Last digit of %d is %d", n, last)
+}
+else ()
+{
+printf("Last digit of %d is %d", n, last)
+}
+return (0);
+}
