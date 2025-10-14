@@ -1,0 +1,13 @@
+#include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
+/**
+* main -n is random and printf print what is it
+* Return: 0 is sucess
+*/
+int main(void)
+{
+char = alph
+
+return (0);
+}
