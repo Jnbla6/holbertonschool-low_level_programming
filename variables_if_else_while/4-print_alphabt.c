@@ -9,20 +9,12 @@
 int main(void)
 {
 char alph;
-char alph2;
-char alph3;
-for (alph = 'a'; alph <= 'd'; alph++)
+for (alph = 'a'; alph <= 'z'; alph++)
 {
+if ('e' && 'q')
+continue;
 putchar(alph);
 }
-for (alph2 = 'f'; alph2 <= 'p'; alph2++)
-{
-putchar(alph2);
-}
-for (alph3 = 'r'; alph3 <= 'z'; alph3++)
-{
-putchar(alph3);
 putchar('\n');
-}
 return (0);
 }
