@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * _isalpha - checks for lowercase character
- * @c: the character to check
+ * print_sign - prints the sign of a number
+ * @n: the number to check
  *
- * Return: 1 if c is lowercase, 0 otherwise
+ * Return: 1 if n is positive, 0 if n is zero, -1 if n is negative
  */
 int print_sign(int n)
 {
