@@ -10,10 +10,12 @@ int _abs(int n)
 {
 if (n < 0)
 {
-return(-n);
+_putchar(-n);
+return 0;
 }
 else
 {
-return(n);
+_putchar(n);
+return 0;
 }
 }
