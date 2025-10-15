@@ -6,15 +6,15 @@
  *
  * Return: 1 if n is positive, 0 if n is zero, -1 if n is negative
  */
-int _abs(int r)
+int _abs(int)
 {
-if (r < 0)
+if (int < 0)
 {
-putchar(-r);
+putchar(-int);
 }
 else
 {
-putchar(r);
+putchar(int);
 }
 return (0);
 }
