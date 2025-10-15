@@ -10,11 +10,11 @@ int _abs(int r)
 {
 if (r < 0)
 {
-printf("-r");
+putchar(-r);
 }
 else
 {
-printf("r");
+putchar(r);
 }
 return (0);
 }
