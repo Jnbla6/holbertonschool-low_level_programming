@@ -1,14 +1,20 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-#include <ctype.h>
-#include "main.c"
+#include "main.h"
 /**
 * main -n is random and printf print what is it
 * Return: 0 is sucess
 */
 int main(void)
 {
-putchar(
+
+char alph;
+
+for (alph = 'a'; alph <= 'z'; alph++)
+{
+_putchar(alph);
+}
+_putchar('\n');
 return (0);
 }
