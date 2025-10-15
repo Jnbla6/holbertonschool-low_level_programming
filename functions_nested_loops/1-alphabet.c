@@ -3,8 +3,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
-* main -n is random and printf print what is it
-* Return: 0 is sucess
+* print_alphabet - func print itd fun for it from 
 */
 void print_alphabet(void)
 {
