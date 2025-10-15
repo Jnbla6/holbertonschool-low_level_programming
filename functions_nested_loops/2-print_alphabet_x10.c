@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
-* print_alphabet - func print itd fun for it from
+* print_alphabet_x10 - func print itd fun for it from
 */
 void print_alphabet_x10(void)
 {
