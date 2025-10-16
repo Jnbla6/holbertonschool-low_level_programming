@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * function print_last_digit - check of a number
+ * print_last_digit - check of a number
  * @n: the number to check
  *
  * Return: last correct
