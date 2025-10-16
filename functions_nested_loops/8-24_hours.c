@@ -10,7 +10,7 @@ void jack_bauer(void)
 {
 int minute;
 int hour = 0;
-while (hour < 24)
+while (hour < 23)
 {
 hour++;
 for (minute = 0; minute < 60; minute++)
