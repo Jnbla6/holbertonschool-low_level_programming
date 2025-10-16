@@ -1,10 +1,10 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_sign - prints the sign of a number
- * @n: the number to check
+ * _abs - check of a number
+ * @r: the number to check
  *
- * Return: 1 if n is positive, 0 if n is zero, -1 if n is negative
+ * Return: r if n is positive -r if n is negative
  */
 int _abs(int r)
 {
