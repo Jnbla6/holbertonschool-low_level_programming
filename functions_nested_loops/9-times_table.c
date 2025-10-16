@@ -19,6 +19,10 @@ result = mult * num;
 if (result <= 9)
 {
 _putchar(result + '0');
+if (num != 9)
+{
+_putchar(',');
+}
 _putchar(' ');
 _putchar(' ');
 }
@@ -26,11 +30,11 @@ else
 {
 _putchar(result / 10 + '0');
 _putchar(result % 10 + '0');
-_putchar(' ');
-}
 if (num != 9)
 {
 _putchar(',');
+}
+_putchar(' ');
 }
 }
 _putchar('\n');
