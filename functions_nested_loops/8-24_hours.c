@@ -8,9 +8,19 @@
  */
 void jack_bauer(void)
 {
-int hour;
-for (hour = 0; hour <= 23; hour++)
+int minute;
+int hour = 0;
+while (hour < 24)
 {
-printf("%d\n", hour);
+hour++;
+for (minute = 0; minute < 60; minute++)
+{
+_putchar((hour/10) + '0');
+_putchar((hour%10) + '0');
+_putchar(':');
+_putchar((minute/10) + '0');
+_putchar((minute%10) + '0');
+_putchar('\n');
+}
 }
 }
