@@ -22,9 +22,9 @@ _putchar(result + '0');
 if (num != 9)
 {
 _putchar(',');
+_putchar(' ');
+_putchar(' ');
 }
-_putchar(' ');
-_putchar(' ');
 }
 else
 {
@@ -33,8 +33,8 @@ _putchar(result % 10 + '0');
 if (num != 9)
 {
 _putchar(',');
-}
 _putchar(' ');
+}
 }
 }
 _putchar('\n');
