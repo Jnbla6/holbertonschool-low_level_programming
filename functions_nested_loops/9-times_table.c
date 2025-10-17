@@ -18,6 +18,7 @@ for (num=0; num <= 9; num++)
 result = mult * num;
 if (result <= 9)
 {
+if (num != 0)
 _putchar(' ');
 _putchar(result + '0');
 if (num != 9)
