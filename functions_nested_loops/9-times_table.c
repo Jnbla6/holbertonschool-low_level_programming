@@ -24,7 +24,6 @@ if (num != 9)
 {
 _putchar(',');
 _putchar(' ');
-_putchar(' ');
 }
 }
 else
