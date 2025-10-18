@@ -1,27 +1,68 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
- * add - check of a number
- * @a: the number to check
- * @b: the  untg
- * Return: last correct
+ * print_to_98 - prints all natural numbers from n to 98
+ * @n: the starting number
+ *
+ * Return: void
  */
 void print_to_98(int n)
 {
-for (n = 0; n <= 98; n++)
+int num;
+
+if (n <= 98)
 {
-if (n <= 9)
+for (num = n; num <= 98; num++)
 {
-_putchar(n + '0');
-_putchar(',');
-_putchar(' ');
+if (num < 10 && num >= 0)
+{
+_putchar(num + '0');
+}
+else if (num >= 10)
+{
+_putchar((num / 10) + '0');
+_putchar((num % 10) + '0');
 }
 else
 {
-_putchar(n / 10 + '0');
-_putchar(n % 10 + '0');
+_putchar('-');
+if (num > -10)
+{
+_putchar(-num + '0');
+}
+else
+{
+_putchar(-(num / 10) + '0');
+_putchar(-(num % 10) + '0');
+}
+}
+
+if (num != 98)
+{
 _putchar(',');
 _putchar(' ');
+}
+}
+}
+else
+{
+for (num = n; num >= 98; num--)
+{
+if (num < 10 && num >= 0)
+{
+_putchar(num + '0');
+}
+else
+{
+_putchar((num / 10) + '0');
+_putchar((num % 10) + '0');
+}
+
+if (num != 98)
+{
+_putchar(',');
+_putchar(' ');
+}
 }
 }
 _putchar('\n');
