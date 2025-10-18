@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * times_table - check of a number
- * the number to check
- *
+ * add - check of a number
+ * @a: the number to check
+ * @b: the  untg
  * Return: last correct
  */
 int add(int a, int b)
