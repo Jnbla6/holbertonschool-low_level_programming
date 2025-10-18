@@ -8,36 +8,42 @@
  */
 void print_to_98(int n)
 {
-int num;
+int i;
 
 if (n <= 98)
 {
-for (num = n; num <= 98; num++)
+for (i = n; i <= 98; i++)
 {
-if (num < 0)
+if (i < 0)
 {
 _putchar('-');
-if (num > -10)
+if (i > -10)
 {
-_putchar(-num + '0');
+_putchar(-i + '0');
 }
 else
 {
-_putchar((-num / 10) + '0');
-_putchar((-num % 10) + '0');
+_putchar((-i / 10) + '0');
+_putchar((-i % 10) + '0');
 }
 }
-else if (num < 10)
+else if (i < 10)
 {
-_putchar(num + '0');
+_putchar(i + '0');
+}
+else if (i < 100)
+{
+_putchar((i / 10) + '0');
+_putchar((i % 10) + '0');
 }
 else
 {
-_putchar((num / 10) + '0');
-_putchar((num % 10) + '0');
+_putchar((i / 100) + '0');
+_putchar(((i / 10) % 10) + '0');
+_putchar((i % 10) + '0');
 }
 
-if (num != 98)
+if (i != 98)
 {
 _putchar(',');
 _putchar(' ');
@@ -46,32 +52,21 @@ _putchar(' ');
 }
 else
 {
-for (num = n; num >= 98; num--)
+for (i = n; i >= 98; i--)
 {
-if (num < 0)
+if (i < 100)
 {
-_putchar('-');
-if (num > -10)
-{
-_putchar(-num + '0');
+_putchar((i / 10) + '0');
+_putchar((i % 10) + '0');
 }
 else
 {
-_putchar((-num / 10) + '0');
-_putchar((-num % 10) + '0');
-}
-}
-else if (num < 10)
-{
-_putchar(num + '0');
-}
-else
-{
-_putchar((num / 10) + '0');
-_putchar((num % 10) + '0');
+_putchar((i / 100) + '0');
+_putchar(((i / 10) % 10) + '0');
+_putchar((i % 10) + '0');
 }
 
-if (num != 98)
+if (i != 98)
 {
 _putchar(',');
 _putchar(' ');
