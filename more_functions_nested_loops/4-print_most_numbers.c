@@ -6,7 +6,7 @@
  * print_numbers - checks for uppercase character
  * Return: 1 if c is uppercase, 0 otherwise
  */
-void print_most_numbers(void);
+void print_most_numbers(void)
 {
 int a;
 for (a = 0; a <= 9; a++)
