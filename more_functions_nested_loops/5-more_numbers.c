@@ -12,15 +12,8 @@ int a, l;
 for (l=0; l <= 10; l++)
 {
 for (a = 0; a <= 14; a++)
-if (a <= 9)
-{
-_putchar(a + '0');
-}
-else
-{
 _putchar(a / 10 + '0');
 _putchar(a % 10 + '0');
-}
 {
 _putchar('\n');
 }
