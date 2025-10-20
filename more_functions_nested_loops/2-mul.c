@@ -3,7 +3,8 @@
 #include <ctype.h>
 /**
  * mul - checks for uppercase character
- * @c: character to check
+ * @a: character to check
+ * @b: character to check
  * Return: 1 if c is uppercase, 0 otherwise
  */
 int mul(int a, int b)
