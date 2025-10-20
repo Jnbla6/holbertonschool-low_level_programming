@@ -3,7 +3,7 @@
 #include <ctype.h>
 #include <unistd.h>
 /**
- * print_numbers - checks for uppercase character
+ * print_most_numbers - checks for uppercase character
  * Return: 1 if c is uppercase, 0 otherwise
  */
 void print_most_numbers(void)
