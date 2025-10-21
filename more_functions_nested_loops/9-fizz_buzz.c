@@ -16,9 +16,6 @@ if (i % 3 == 0 && i % 5 == 0)
 printf("FizzBuzz");
 printf(" ");
 }
-printf("Fizz");
-printf(" ");
-}
 else if (i % 5 == 0)
 {
 printf("Buzz");
