@@ -1,0 +1,20 @@
+#include "main.h"
+#include <stdio.h>
+#include <ctype.h>
+#include <unistd.h>
+/**
+ * more_numbers - checks for uppercase character
+ * Return: 1 if c is uppercase, 0 otherwise
+ */
+void print_line(int n)
+{
+int a;
+if( n > 0 )
+{
+for (a = 0; a < n; a++)
+{
+_putchar('_');
+}
+}
+_putchar('\n');
+}
