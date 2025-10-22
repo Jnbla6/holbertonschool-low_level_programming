@@ -3,7 +3,7 @@
 #include <ctype.h>
 #include <unistd.h>
 /**
- * print_square - checks for uppercase character
+ * print_triangle - checks for uppercase character
  * @size : func for kda kda
  * Return: 1 if c is uppercase, 0 otherwise
  */
