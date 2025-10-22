@@ -16,20 +16,24 @@ if(size < 10)
 {
 for (i = 0; i < size -d -1; i++)
 {
-_putchar('.');
+_putchar(' ');
 }
 }
 else
 {
 for (i = 9; i > d; i--)
 {
-_putchar('.');
+_putchar(' ');
 }
 }
 for (m = 0; m <= d; m++)
 {
 _putchar('#');
 }
+_putchar('\n');
+}
+if(d == 0)
+{
 _putchar('\n');
 }
 }
