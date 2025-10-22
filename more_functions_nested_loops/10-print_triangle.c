@@ -10,30 +10,26 @@
 void print_triangle(int size)
 {
 int i, d, m;
+
+if (size <= 0)
+{
+_putchar('\n');
+return;
+}
+
 for (d = 0; d < size; d++)
 {
-if(size < 10)
-{
-for (i = 0; i < size -d -1; i++)
-{
-_putchar(' ');
-}
-}
-else
-{
-for (i = 9; i > d; i--)
+// Print spaces (always size-d-1 spaces regardless of size value)
+for (i = 0; i < size - d - 1; i++)
 {
 _putchar(' ');
 }
-}
+
+// Print hashes
 for (m = 0; m <= d; m++)
 {
 _putchar('#');
 }
-_putchar('\n');
-}
-if(d == 0)
-{
 _putchar('\n');
 }
 }
