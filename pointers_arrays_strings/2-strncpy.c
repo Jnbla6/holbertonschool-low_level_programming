@@ -3,7 +3,7 @@
 #include <ctype.h>
 #include <unistd.h>
 /**
- * *_strnpy - checks for uppercase character
+ * *_strncpy - checks for uppercase character
  * @dest : func for kda kda
  * @src : func for kda kda
  * @n : func for kda kda
