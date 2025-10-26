@@ -3,7 +3,7 @@
 #include <ctype.h>
 #include <unistd.h>
 /**
- * *string_toupper - checks for uppercase character
+ * *cap_string - checks for uppercase character
  * @str : func for kda kda
  * Return: 1 if c is uppercase, 0 otherwise
  */
