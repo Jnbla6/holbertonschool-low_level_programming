@@ -19,7 +19,7 @@ return (&s[i]);
 }
 if (c == '\0')
 {
-return(&s[i]);
+return (&s[i]);
 }
 return (NULL);
 }
