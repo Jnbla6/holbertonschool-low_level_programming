@@ -18,6 +18,7 @@ for (q = 0; needle[q] != '\0'; q++)
 if (haystack[i + q] != needle[q])
 break;
 }
+if(needle[q] == '\0')
 return (&haystack[i]);
 }
 return (NULL);
