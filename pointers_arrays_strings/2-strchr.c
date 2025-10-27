@@ -15,13 +15,9 @@ int i;
 for (i = 0; i != '\0'; i++)
 {
 if (s[i] == c)
-{
 return (&s[i]);
 }
-}
-if (s[i] == c)
-{
+if (c == '\0')
 return (&s[i]);
-}
 return (NULL);
 }
