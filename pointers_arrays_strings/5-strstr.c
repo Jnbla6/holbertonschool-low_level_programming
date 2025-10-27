@@ -3,9 +3,9 @@
 #include <ctype.h>
 #include <unistd.h>
 /**
- * *_strpbrk - checks for uppercase character
- * @s : func for kda kda
- * @accept : func for kda kda
+ * *_strstr - checks for uppercase character
+ * @haystack : func for kda kda
+ * @needle : func for kda kda
  * Return: 1 if c is uppercase, 0 otherwise
  */
 char *_strstr(char *haystack, char *needle)
