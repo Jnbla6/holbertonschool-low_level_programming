@@ -3,8 +3,8 @@
 #include <ctype.h>
 #include <unistd.h>
 /**
- * puts_half - checks for uppercase character
- * @str : func for kda kda
+ * print_chessboard - checks for uppercase character
+ * @a : func for kda kda
  * Return: 1 if c is uppercase, 0 otherwise
  */
 void print_chessboard(char (*a)[8])
