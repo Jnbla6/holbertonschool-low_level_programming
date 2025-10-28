@@ -2,12 +2,21 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <unistd.h>
+
 /**
- * _sqrt_recursion - checks for uppercase character
- * sqrt_helper - checks for uppercase character
- * @n : func for kda kda
- * @guess : func for kda kda
- * Return: 1 if c is uppercase, 0 otherwise
+ * sqrt_helper - Helper function to find natural square root recursively
+ * @n: The number to find the square root of
+ * @guess: The current guess being tested
+ *
+ * Return: Natural square root of n, or -1 if not found
+ */
+
+int sqrt_helper(int n, int guess);
+/**
+ * _sqrt_recursion - Returns the natural square root of a number
+ * @n: The number to find the square root of
+ *
+ * Return: Natural square root of n, or -1 if n has no natural square root
  */
 int _sqrt_recursion(int n)
 {
@@ -20,11 +29,11 @@ return (sqrt_helper(n, 1));
 }
 
 /**
- * _sqrt_recursion - checks for uppercase character
- * sqrt_helper - checks for uppercase character
- * @n : func for kda kda
- * @guess : func for kda kda
- * Return: 1 if c is uppercase, 0 otherwise
+ * sqrt_helper - Helper function to find natural square root recursively
+ * @n: The number to find the square root of
+ * @guess: The current guess being tested
+ *
+ * Return: Natural square root of n, or -1 if not found
  */
 
 int sqrt_helper(int n, int guess)
