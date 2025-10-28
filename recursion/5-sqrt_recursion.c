@@ -16,7 +16,7 @@ return (-1);
 if (n == 0 || n == 1)
 return (n);
 
-return sqrt_helper(n, 1);
+return (sqrt_helper(n, 1));
 }
 
 int sqrt_helper(int n, int guess)
