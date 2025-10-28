@@ -3,8 +3,9 @@
 #include <ctype.h>
 #include <unistd.h>
 /**
- * factorial - checks for uppercase character
- * @n : func for kda kda
+ * _pow_recursion - checks for uppercase character
+ * @x : func for kda kda
+ * @y : func for kda kda
  * Return: 1 if c is uppercase, 0 otherwise
  */
 int _pow_recursion(int x, int y)
