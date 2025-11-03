@@ -16,13 +16,13 @@ char *pa;
 unsigned int i;
 if (size == 0) 
 {
-return(NULL);
+return (NULL);
 }
 
 pa = malloc(size * sizeof(char));
 
 if (pa == NULL)
-return(NULL);
+return (NULL);
 
 for (i = 0; i < size; i++)
 {
