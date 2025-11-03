@@ -2,9 +2,8 @@
 #include <stdlib.h>
 
 /**
- * create_array - Determines if a number is prime
- * @size: The number to check
- * @c: hello
+ * _strdup - Determines if a number is prime
+ * @str: The number to check
  * Return: 0 if n is prime, 0 otherwise
  */
 
