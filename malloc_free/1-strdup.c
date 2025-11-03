@@ -14,7 +14,8 @@ int count = 0, i;
 char *k;
 if (str == NULL)
 return (NULL);
-for (; str[count] != '\0'; count++);
+for (; str[count] != '\0'; count++)
+;
 k = malloc(count + 1 * sizeof(char));
 if (k == NULL)
 return (NULL);
