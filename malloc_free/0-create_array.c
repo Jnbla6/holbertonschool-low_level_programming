@@ -18,12 +18,9 @@ if (size == 0)
 {
 return (NULL);
 }
-
 pa = malloc(size * sizeof(char));
-
 if (pa == NULL)
 return (NULL);
-
 for (i = 0; i < size; i++)
 {
 pa[i] = c;
