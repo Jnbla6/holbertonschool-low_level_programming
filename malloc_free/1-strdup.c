@@ -15,10 +15,11 @@ char *k;
 if (str == NULL)
 return (NULL);
 for (; str[count] != '\0'; count++);
-k = malloc(count * sizeof(char));
+k = malloc(count + 1 * sizeof(char));
 if (k == NULL)
 return (NULL);
 for (i = 0; i < count; i++)
 k[i] = str[i];
+k[count] = '\0';
 return (k);
 }
