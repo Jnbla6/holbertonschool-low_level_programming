@@ -3,8 +3,8 @@
 
 /**
  * str_concat - Determines if a number is prime
- * @s1 The number to check
- * @s2 The number to check
+ * @s1: The number to check
+ * @s2: The number to check
  * Return: 0 if n is prime, 0 otherwise
  */
 
