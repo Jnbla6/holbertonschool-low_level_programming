@@ -13,18 +13,10 @@ int count1 = 0, count2 = 0, i = 0;
 int count;
 int a = 0;
 char *k;
-if (s1 == NULL && s2 == NULL)
-return (NULL);
-else if (s1 == NULL)
-{
-return (s1 = " ");
-}
-else if (s2 == NULL)
-{
-return (s2 = " ");
-}
-else
-{
+if (s1 == NULL)
+(s1 = "");
+if (s2 == NULL)
+(s2 = "");
 for (; s1[count1] != '\0'; count1++)
 ;
 for (; s2[count2] != '\0'; count2++)
@@ -46,5 +38,4 @@ a++;
 }
 k[count] = '\0';
 return (k);
-}
 }
