@@ -17,7 +17,10 @@ if (width == 0 || height == 0)
 return (NULL);
 g = malloc(height * sizeof(int *));
 if (g == NULL)
+{
+free (g);
 return (NULL);
+}
 for (i = 0; i < height; i++)
 {
 g[i] = malloc(width * sizeof(int));
