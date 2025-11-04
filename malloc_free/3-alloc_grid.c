@@ -29,8 +29,8 @@ for (k = 0; k < i; k++)
 {
 free (g[k]);
 free (g);
-return (NULL);
 }
+return (NULL);
 }
 for (j = 0; j < width; j++)
 {
