@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * str_concat - Determines if a number is prime
+ * @s1: The number to check
+ * @s2: The number to check
+ * Return: 0 if n is prime, 0 otherwise
+ */
+
+int **alloc_grid(int width, int height)
+{
+int **g;
+int i, j;
+int k;
+if (width == 0 || height == 0)
+return (NULL);
+g = malloc(height * sizeof(int *));
+if (g == NULL)
+return (NULL);
+for (i = 0; i < height; i++)
+{
+g[i] = malloc(width * sizeof(int));
+if (g[i] == NULL)
+for (k = 0; k < i; k++)
+free (g[k]);
+free (g);
+return (NULL);
+for (j = 0; j < width; j++)
+{
+g[i][j] = 0;
+}
+}
+return (g);
+}
