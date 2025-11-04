@@ -2,9 +2,9 @@
 #include <stdlib.h>
 
 /**
- * str_concat - Determines if a number is prime
- * @s1: The number to check
- * @s2: The number to check
+ * **alloc_grid - Determines if a number is prime
+ * @width: The number to check
+ * @height: The number to check
  * Return: 0 if n is prime, 0 otherwise
  */
 
@@ -18,7 +18,6 @@ return (NULL);
 g = malloc(height * sizeof(int *));
 if (g == NULL)
 {
-free (g);
 return (NULL);
 }
 for (i = 0; i < height; i++)
@@ -26,12 +25,8 @@ for (i = 0; i < height; i++)
 g[i] = malloc(width * sizeof(int));
 if (g[i] == NULL)
 {
-for (k = 0; k < i; k++)
-{
-free (g[k]);
 free (g);
 return (NULL);
-}
 }
 for (j = 0; j < width; j++)
 {
