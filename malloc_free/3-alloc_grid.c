@@ -27,8 +27,8 @@ if (g[i] == NULL)
 {
 for (k = 0; k < i; k++)
 {
-free (g[k]);
-free (g);
+free(g[k]);
+free(g);
 }
 return (NULL);
 }
