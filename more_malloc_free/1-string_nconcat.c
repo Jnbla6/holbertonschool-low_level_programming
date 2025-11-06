@@ -19,20 +19,21 @@ if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
 s2 = "";
-len1 = strlen(s1);
-len2 = strlen(s2);
-
+for (copy = 0; copy < s1 ; copy++)
+len1 = copy;
+copy = 0;
+for (total = 0; total < s1 ; total++);
+len1 = total;
+total = 0;
 if (n > len2)
 {
 n = len2;
 }
-
 j = malloc(n + len1 + 1);
 {
 if (j == NULL)
 return(NULL);
 }
-
 for (copy = 0; copy < len1; copy++)
 {
 j[copy] = s1[copy];
