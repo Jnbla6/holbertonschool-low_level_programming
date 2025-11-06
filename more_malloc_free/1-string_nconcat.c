@@ -24,7 +24,7 @@ s2 = "";
 for (len1 = 0; s1[len1] != '\0' ; len1++)
 ;
 
-for (len2 = 0; s2[len2] != '\0' ; len2++);
+for (len2 = 0; s2[len2] != '\0' ; len2++)
 ;
 
 if (n > len2)
@@ -36,7 +36,7 @@ n = len2;
 j = malloc(n + len1 + 1);
 
 if (j == NULL)
-return(NULL);
+return (NULL);
 
 for (copy = 0; copy < len1; copy++)
 {
