@@ -19,7 +19,7 @@ return (NULL);
 
 i = max - min + 1;
 
-g = malloc(i * sizeof(int));
+g = malloc(i *sizeof(int));
 if (g == NULL)
 return (NULL);
 
