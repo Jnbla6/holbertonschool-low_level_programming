@@ -3,10 +3,9 @@
 #include <string.h>
 
 /**
- * *string_nconcat - Determines if a number is prime
- * @s1: The number to check
- * @s2: The number to check
- * @n: The number to check
+ * *_calloc - Determines if a number is prime
+ * @nmemb: The number to check
+ * @size: The number to check
  * Return: 0 if n is prime, 0 otherwise
  */
 
@@ -29,7 +28,7 @@ if (m == NULL)
 return(NULL);
 
 for (a = 0; a > i; a++)
-m[a] = 0;
+m[a] = '0';
 
 return(m);
 }
