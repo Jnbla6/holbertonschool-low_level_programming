@@ -16,19 +16,19 @@ unsigned int i, a;
 char *m;
 
 if (nmemb == 0)
-return(NULL);
+return (NULL);
 
 if (size == 0)
-return(NULL);
+return (NULL);
 
 i = nmemb * size;
 
 m = malloc(i);
 if (m == NULL)
-return(NULL);
+return (NULL);
 
 for (a = 0; a < i; a++)
 m[a] = 0;
 
-return(m);
+return (m);
 }
