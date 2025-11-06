@@ -19,11 +19,11 @@ if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
 s2 = "";
-for (copy = 0; copy < s1 ; copy++)
+for (copy = 0; s1[copy] != '\0' ; copy++)
 len1 = copy;
 copy = 0;
-for (total = 0; total < s1 ; total++);
-len1 = total;
+for (total = 0; s2[total] != '\0' ; total++);
+len2 = total;
 total = 0;
 if (n > len2)
 {
