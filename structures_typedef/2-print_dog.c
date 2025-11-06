@@ -24,9 +24,6 @@ d->owner = "(nil)";
 
 
 printf("Name: %s\n", d->name);
-if (d->age == 0)
-printf("age: (nil)\n");
-else
 printf("Age: %f\n", d->age);
 printf("Owner: %s\n", d->owner);
 }
