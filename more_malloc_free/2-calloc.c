@@ -27,8 +27,8 @@ m = malloc(i);
 if (m == NULL)
 return(NULL);
 
-for (a = 0; a > i; a++)
-m[a] = '0';
+for (a = 0; m[a] != '\0'; a++)
+m[a] = 0;
 
 return(m);
 }
