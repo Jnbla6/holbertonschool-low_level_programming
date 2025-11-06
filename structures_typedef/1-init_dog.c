@@ -19,4 +19,7 @@ d->age = age;
 d->owner = owner;
 };
 
+if (d == NULL)
+printf("Ok");
+
 }
