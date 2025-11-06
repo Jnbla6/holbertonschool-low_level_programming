@@ -43,7 +43,7 @@ for (copy = 0; copy <= len1; copy++)
 {
 j[copy] = s1[copy];
 }
-for (total = 0; total <= n; total++)
+for (total = 0; total < n; total++)
 {
 j[total + copy] = s2[total];
 }
