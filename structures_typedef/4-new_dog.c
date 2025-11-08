@@ -28,11 +28,19 @@ for (j = 0; owner[j] != '\0'; j++)
 
 k = malloc(i + 1);
 if (k == NULL)
+{
+new_dog = NULL;
 return(NULL);
+}
+
 
 h = malloc(j + 1);
 if (h == NULL)
+{
+new_dog = NULL;
+k = NULL;
 return(NULL);
+}
 
 for (n = 0; n <= i; n++)
 k[n] = name[n];
@@ -43,9 +51,6 @@ h[o] = owner[o];
 new_dog->name = k;
 new_dog->age = age;
 new_dog->owner = h;
-
-k[n] = '\0';
-h[o] = '\0';
 
 return(new_dog);
 }
