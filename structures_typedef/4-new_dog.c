@@ -20,10 +20,10 @@ new_dog = malloc(sizeof(dog_t));
 if (new_dog == NULL)
 return(NULL);
 
-for (i = 0; name[i] != '\0' i++)
+for (i = 0; name[i] != '\0'; i++)
 ;
 
-for (j = 0; owner[j] != '\0' j++)
+for (j = 0; owner[j] != '\0'; j++)
 ;
 
 k = malloc(i + 1);
