@@ -29,7 +29,7 @@ for (j = 0; owner[j] != '\0'; j++)
 k = malloc(i + 1);
 if (k == NULL)
 {
-new_dog = NULL;
+free(new_dog);
 return(NULL);
 }
 
@@ -37,8 +37,8 @@ return(NULL);
 h = malloc(j + 1);
 if (h == NULL)
 {
-new_dog = NULL;
-k = NULL;
+free(new_dog);
+free(k);
 return(NULL);
 }
 
