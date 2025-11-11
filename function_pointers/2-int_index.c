@@ -11,9 +11,22 @@
  * Return: Nothing.
  */
 
-void array_iterator(int *array, size_t size, void (*action)(int))
+int int_index(int *array, int size, int (*cmp)(int))
 {
-size_t i;
+int i;
+if (size <= 0)
+return (-1);
+
+if (cmp == NULL)
+return (-1);
+
+if (array == NULL)
+return (-1);
+
 for (i = 0; i < size; i++)
-action(array[i]);
+if (cmp(array[i]) != 0)
+return(i);
+return (-1);
+
+
 }
