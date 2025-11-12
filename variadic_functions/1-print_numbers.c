@@ -22,7 +22,7 @@ printf("%d", numbers);
 else if (i + 1 == n)
 printf("%d", numbers);
 else
-printf("%d%s",numbers, separator);
+printf("%d%s", numbers, separator);
 }
 printf("\n");
 }
