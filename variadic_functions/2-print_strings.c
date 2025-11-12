@@ -18,6 +18,8 @@ for (i = 0; i < n; i++)
 names = va_arg(nums, char *);
 if (separator == 0)
 printf("%s", names);
+else if (names == NULL)
+printf("nil, ");
 else if (i + 1 == n)
 printf("%s", names);
 else
