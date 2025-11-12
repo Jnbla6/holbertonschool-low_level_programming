@@ -18,10 +18,10 @@ for (i = 0; i < n; i++)
 {
 numbers = va_arg(nums, int);
 if (separator == 0)
-printf("%d", numbers);
+printf("%d\n", numbers);
 else if (i + 1 == n)
-printf("%d", numbers);
+printf("%d\n", numbers);
 else
-printf("%d%s",numbers, separator);
+printf("%d%s\n",numbers, separator);
 }
 }
