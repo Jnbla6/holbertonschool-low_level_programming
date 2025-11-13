@@ -4,10 +4,11 @@
 #include <stdio.h>
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * print_all - prints anything
+ * @format: list of types of arguments passed to the function
+ * @...: variable number of arguments to be printed
  */
+
 void print_all(const char * const format, ...)
 {
 va_list num;
