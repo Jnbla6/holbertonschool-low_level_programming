@@ -38,6 +38,7 @@ names = va_arg(num, char *);
 if (names == NULL)
 {
 printf("(nil)");
+break;
 }
 printf("%s", names);
 break;
