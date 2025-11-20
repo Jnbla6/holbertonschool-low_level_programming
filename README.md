@@ -4,8 +4,8 @@ flowchart TD
     B -- No --> C[Return -1]
     B -- Yes --> D[Initialize va_list]
     D --> E[Loop over format]
-    E --> F{format[i] == '%'?}
-    F -- No --> G[_putchar(format[i])]
+    E --> F{format == '%'?}
+    F -- No --> G[_putchar(format)]
     F -- Yes --> H[handle_specifier()]
     G --> I[Add char to buffer]
     H --> I
