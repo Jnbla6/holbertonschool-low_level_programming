@@ -1,21 +1,11 @@
-
-```mermaid
 flowchart TD
-    A[_printf Start] --> B{Format string NULL or lone '%'?}
-    B -- Yes --> C[Return -1]
-    B -- No --> D[Initialize va_list]
-    D --> E[Loop over format[]]
-    E --> F{format[i] == '%'?}
-    F -- No --> G[_putchar(format[i])]
-    F -- Yes --> H[handle_specifier()]
-    G --> I[Add char to buffer]
-    H --> I
-    I --> J{Buffer full?}
-    J -- Yes --> K[flush()]
-    J -- No --> L[Continue loop]
-    K --> L
-    L --> M{End of format?}
-    M -- No --> E
-    M -- Yes --> N[flush()]
-    N --> O[va_end(cart)]
-    O --> P[Return total_count]
+    A[Start] --> B[Initialize variables]
+    B --> C{Check format type}
+    C -->|c| D[Print character]
+    C -->|s| E[Print string]
+    E --> F[Loop over format]
+    F --> G{More items?}
+    G -->|Yes| F
+    G -->|No| H[End]
+    D --> H
+    
