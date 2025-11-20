@@ -1,3 +1,4 @@
+```mermaid
 flowchart TD
     A[Start] --> B[Initialize variables]
     B --> C{Check format type}
@@ -8,4 +9,3 @@ flowchart TD
     G -->|Yes| F
     G -->|No| H[End]
     D --> H
-    
