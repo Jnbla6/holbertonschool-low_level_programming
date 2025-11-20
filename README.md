@@ -3,7 +3,7 @@ flowchart TD
     A[_printf Start] --> B{Format string valid?}
     B -- No --> C[Return -1]
     B -- Yes --> D[Initialize va_list]
-    D --> E[Loop over format[]]
+    D --> E[Loop over format]
     E --> F{format[i] == '%'?}
     F -- No --> G[_putchar(format[i])]
     F -- Yes --> H[handle_specifier()]
