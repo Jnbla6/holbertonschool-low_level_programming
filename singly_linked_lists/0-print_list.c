@@ -19,12 +19,13 @@ while(h)
 if (h->str == NULL)
 {
 printf("[0] (nil)\n");
-break;
 }
+else
+{
 printf("[%d] %s\n", h->len, h->str);
 count++;
 h = h->next;
 }
-
+}
 return(count);
 }
