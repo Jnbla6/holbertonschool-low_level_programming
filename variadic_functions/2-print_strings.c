@@ -12,13 +12,13 @@ void print_strings(const char *separator, const unsigned int n, ...)
 va_list nums;
 unsigned int i;
 char *names;
-va_start(nums, n);
-for (i = 0; i < n; i++)
+va_start(nums, 5);
+for (i = 0; i < 5; i++)
 {
 names = va_arg(nums, char *);
 if (separator == 0)
 printf("%s", names);
-else if (names == NULL)
+else if (names == NU    LL)
 printf("(nil)");
 else if (i + 1 == n)
 printf("%s", names);
@@ -26,4 +26,5 @@ else
 printf("%s%s", names, separator);
 }
 printf("\n");
+vaend
 }
