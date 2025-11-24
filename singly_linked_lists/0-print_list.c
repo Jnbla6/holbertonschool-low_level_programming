@@ -12,14 +12,16 @@ int count = 0;
 if (!h->str)
 {
 printf("[0] (nil)\n");
-return(0);
+return(count);
 }
-
+else
+{
 while(h->str)
 {
 printf("[%d] %s\n", h->len, h->str);
 count++;
 h = h->next;
+}
 }
 return(count);
 }
