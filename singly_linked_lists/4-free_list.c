@@ -10,8 +10,9 @@ void free_list(list_t *head)
 list_t *tmp = head;
 while(tmp)
 {
-list_t *clear = tmp;
-tmp = tmp->next;
-free(clear);
+tmp = head;
+head = head->next;
+free(tmp->str);
+free(tmp);
 }
 }
