@@ -12,6 +12,7 @@ while(tmp)
 {
 tmp = head;
 head = head->next;
+if(tmp != NULL)
 free(tmp->str);
 free(tmp);
 }
