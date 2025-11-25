@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * add_node - adds a new node at the beginning of a list_t list
+ * add_node_end - adds a new node at the end of a list_t list
  * @head: pointer to the head of the list
  * @str: string to be added to the new node
  *
@@ -41,7 +41,7 @@ i = *head;
 if ( i == NULL)
 {
 *head = m;
-return(*head);
+return (*head);
 }
 
 while (i->next != NULL)
