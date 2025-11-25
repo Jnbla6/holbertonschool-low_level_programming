@@ -20,11 +20,11 @@ while(str[count])
 count++;
 
 m = malloc(sizeof(list_t));
-if (m = NULL)
+if (m == NULL)
 return (NULL);
 
 s = strdup(str);
-if (s = NULL)
+if (s == NULL)
 {
 free(m);
 return (NULL);
