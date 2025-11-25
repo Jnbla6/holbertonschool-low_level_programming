@@ -38,7 +38,7 @@ m->len = count;
 m->next = NULL;
 i = *head;
 
-if( i == NULL)
+if (i == NULL)
 {
 *head = m;
 return (*head);
