@@ -16,7 +16,7 @@ int count = 0;
 if (!str)
 return (NULL);
 
-while(str[count])
+while (str[count])
 count++;
 
 m = malloc(sizeof(list_t));
