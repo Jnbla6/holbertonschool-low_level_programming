@@ -16,6 +16,6 @@ while(head)
 {
 temp->next = temp;
 if(temp)
-free(head)
+free(head);
 }
 }
