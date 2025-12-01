@@ -20,7 +20,7 @@ return (NULL);
 m->n = n;
 m->prev = NULL;
 m->next = *head;
-if (!*head)
+if (*head != NULL)
 (*head)->prev = m;
 *head = m;
 return (*head);
