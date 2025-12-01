@@ -20,7 +20,7 @@ m = malloc(sizeof(dlistint_t));
 if (m == NULL)
 return (NULL);
 
-if (n == NULL)
+if (n == 0)
 {
 free(m);
 return (NULL);
