@@ -18,8 +18,10 @@ if (m == NULL)
 return (NULL);
 
 m->n = n;
-m->next = *head;
 m->prev = NULL;
+m->next = *head;
+if (!*head)
+(*head)->prev = m;
 *head = m;
 return (*head);
 
