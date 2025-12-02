@@ -14,7 +14,7 @@ realnode->n = n;
 if (*h == NULL)
 return (NULL);
 
-if (idx = 0)
+if (idx == 0)
 {
 realnode->next = temp->next;
 realnode->prev = NULL;
