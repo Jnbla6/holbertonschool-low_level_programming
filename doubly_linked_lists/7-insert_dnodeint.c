@@ -11,10 +11,15 @@ if (realnode == NULL)
 return (NULL);
 realnode->n = n;
 
-
-
 if (*h == NULL)
 return (NULL);
+
+if (idx = 0)
+{
+realnode->next = temp->next;
+realnode->prev = NULL;
+return(realnode);
+}
 
 while(i < idx - 1)
 {
