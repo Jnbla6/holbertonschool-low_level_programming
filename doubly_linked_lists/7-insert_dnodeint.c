@@ -6,7 +6,7 @@ unsigned int i = 0;
 dlistint_t *temp = *h;
 dlistint_t *realnode = *h;
 
-if(h = NULL)
+if(h == NULL)
 return (NULL);
 
 realnode = malloc(sizeof(dlistint_t));
