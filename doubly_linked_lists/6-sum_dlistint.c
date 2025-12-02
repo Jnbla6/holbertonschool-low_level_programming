@@ -11,7 +11,6 @@ while(temp->next != NULL)
 sum += temp->n;
 temp = temp->next;
 }
-if(temp->next != NULL)
 sum += temp->n;
 return(sum);
 }
