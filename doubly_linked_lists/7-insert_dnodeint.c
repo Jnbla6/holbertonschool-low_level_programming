@@ -40,7 +40,7 @@ realnode->next = temp->next;
 realnode->prev = temp;
 
 if (temp->next == NULL)
-realnode->next->prev = realnode;
+temp->next->prev = realnode;
 
 temp->next = realnode;
 
