@@ -7,14 +7,12 @@ int sum = 0;
 dlistint_t *temp = head;
 
 if(temp == NULL)
-return(NULL);
+return(0);
 
 while(temp != NULL)
 {
 sum += temp->n;
 temp = temp->next;
-if(temp == NULL)
-return(NULL);
 }
 
 return(sum);
