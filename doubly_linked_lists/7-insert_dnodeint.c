@@ -6,13 +6,14 @@ unsigned int i = 0;
 dlistint_t *temp = *h;
 dlistint_t *realnode = *h;
 
+if(h = NULL)
+return (NULL);
+
 realnode = malloc(sizeof(dlistint_t));
 if (realnode == NULL)
 return (NULL);
-realnode->n = n;
 
-if (*h == NULL)
-return (NULL);
+realnode->n = n;
 
 if (idx == 0)
 {
@@ -22,6 +23,12 @@ if (*h != NULL)
 (*h)->prev = realnode;
 *h = realnode;
 return (realnode);
+}
+
+if (*h == NULL)
+{
+free(realnode);
+return (NULL);
 }
 
 while (temp != NULL && i < idx - 1)
