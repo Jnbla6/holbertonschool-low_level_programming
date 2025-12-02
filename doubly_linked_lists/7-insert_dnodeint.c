@@ -21,22 +21,28 @@ realnode->prev = NULL;
 if (*h != NULL)
 (*h)->prev = realnode;
 *h = realnode;
-return(realnode);
+return (realnode);
 }
 
-while(i < idx - 1)
+while (temp != NULL && i < idx - 1)
 {
 temp = temp->next;
 i++;
+}
 
-if (temp == NULL)
+if(temp == NULL)
+{
+free(realnode);
 return (NULL);
 }
 
 realnode->next = temp->next;
 realnode->prev = temp;
 
+if (temp->next == NULL)
+realnode->next->prev = realnode;
+
 temp->next = realnode;
 
-return(realnode);
+return (realnode);
 }
