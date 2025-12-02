@@ -17,11 +17,10 @@ return(NULL);
 while(i < index)
 {
 fakenode = fakenode->next;
-i++;
-}
-
 if(fakenode == NULL)
 return(NULL);
+i++;
+}
 
 return (fakenode);
 }
