@@ -16,8 +16,11 @@ return (NULL);
 
 if (idx == 0)
 {
-realnode->next = temp->next;
+realnode->next = *h;
 realnode->prev = NULL;
+if (*h != NULL)
+(*h)->prev = realnode;
+*h = realnode;
 return(realnode);
 }
 
