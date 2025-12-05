@@ -12,37 +12,27 @@
 
 int create_file(const char *filename, char *text_content)
 {
-char *buffer;
 int fd;
-ssize_t bytesread, byteswrite;
+ssize_t byteswrite;
+int len = 0;
 
 if (filename == NULL)
-return (0);
+return (-1);
 
-fd = open(filename, O_RDONLY);
+fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, S_IREAD | S_IWRITE);
 if (fd == -1)
-return (0);
+return (-1);
 
-buffer = malloc(text_content);
-if (buffer == NULL)
-return (0);
+if(text_content[len] != '\0')
+len++;
 
-bytesread = read(fd, buffer, text_content);
-if (bytesread == -1)
-{
-free(buffer);
-return (0);
-}
-
-byteswrite = write(STDOUT_FILENO, buffer, bytesread);
+byteswrite = write(STDOUT_FILENO, text_content, len);
 if (byteswrite == -1)
 {
-free(buffer);
-return (0);
+return (-1);
 }
 
-free(buffer);
 close(fd);
 
-return (byteswrite);
+return (1);
 }
