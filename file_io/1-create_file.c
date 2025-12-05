@@ -3,11 +3,11 @@
 #include "main.h"
 
 /**
- * read_textfile - reads a text file and prints it to the POSIX standard output
- * @filename: name of the file to read
- * @letters: number of letters to read and print
+ * create_file - creates a file
+ * @filename: name of the file to create
+ * @text_content: NULL terminated string to write to the file
  *
- * Return: the actual number of letters it could read and print, 0 on failure
+ * Return: 1 on success, -1 on failure
  */
 
 int create_file(const char *filename, char *text_content)
@@ -23,6 +23,7 @@ fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, S_IREAD | S_IWRITE);
 if (fd == -1)
 return (-1);
 
+if (text_content != NULL)
 while (text_content[len])
 len++;
 
