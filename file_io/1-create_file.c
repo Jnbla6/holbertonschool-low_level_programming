@@ -23,7 +23,8 @@ fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, S_IREAD | S_IWRITE);
 if (fd == -1)
 return (-1);
 
-if(text_content[len] != NULL)
+if(text_content != NULL)
+while (text_content[len])
 len++;
 
 byteswrite = write(fd, text_content, len);
