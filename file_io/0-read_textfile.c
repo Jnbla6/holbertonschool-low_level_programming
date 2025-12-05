@@ -10,8 +10,10 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
     FILE *pf = fopen(filename, "r");
-    while(fgets(letters, 255, pf) != NULL)
-    printf("%s\n", letters);
+    char buffer[255];
+    while(fgets(buffer, 255, pf) != NULL)
+    printf("%s\n", buffer);
 
     fclose(pf);
+    return (letters);
 }
