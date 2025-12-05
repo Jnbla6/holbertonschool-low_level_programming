@@ -26,7 +26,7 @@ return (-1);
 if(text_content[len] != '\0')
 len++;
 
-byteswrite = write(STDOUT_FILENO, text_content, len);
+byteswrite = write(fd, text_content, len);
 if (byteswrite == -1)
 {
 return (-1);
