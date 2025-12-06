@@ -19,7 +19,7 @@ int len = 0;
 if (filename == NULL)
 return (-1);
 
-fd = open(filename, O_APPEND);
+fd = open(filename, O_WRONLY | O_APPEND);
 if (fd == -1)
 return (-1);
 
@@ -27,7 +27,7 @@ if (text_content != NULL)
 while (text_content[len])
 len++;
 
-byteswrite = append(fd, text_content, len);
+byteswrite = write(fd, text_content, len);
 if (byteswrite == -1)
 {
 return (-1);
