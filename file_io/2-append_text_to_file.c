@@ -3,9 +3,9 @@
 #include "main.h"
 
 /**
- * create_file - creates a file
- * @filename: name of the file to create
- * @text_content: NULL terminated string to write to the file
+ * append_text_to_file - appends text at the end of a file
+ * @filename: name of the file to append to
+ * @text_content: NULL terminated string to add to the end of the file
  *
  * Return: 1 on success, -1 on failure
  */
