@@ -27,7 +27,7 @@ if (text_content != NULL)
 while (text_content[len])
 len++;
 
-byteswrite = write(fd, text_content, len);
+byteswrite = append(fd, text_content, len);
 if (byteswrite == -1)
 {
 return (-1);
