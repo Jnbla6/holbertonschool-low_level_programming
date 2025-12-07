@@ -12,11 +12,11 @@ int main(int argc, char *argv[])
     fdsrc = open(argv[1], O_RDONLY);
     fddst = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC);
 
-    bytesread = (fdsrc, buffer, 1024);
+    bytesread = read(fdsrc, buffer, 1024);
     if(bytesread == -1)
     exit(97);
 
-    byteswrite  = (fddst, buffer, bytesread);
+    byteswrite  = write(fddst, buffer, bytesread);
     if(byteswrite == -1)
     exit(97);
 
