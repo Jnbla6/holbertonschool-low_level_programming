@@ -1,6 +1,6 @@
 #include "main.h"
 
-void main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
     int fdsrc, fddst;
     ssize_t bytesread, byteswrite;
