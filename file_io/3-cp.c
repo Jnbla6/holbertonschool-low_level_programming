@@ -13,11 +13,11 @@ int main(int argc, char *argv[])
     fddst = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC);
 
     bytesread = (fdsrc, buffer, 1024);
-    if(bytesread == NULL)
+    if(bytesread == 0)
     exit(97);
 
     byteswrite  = (fddst, buffer, bytesread);
-    if(byteswrite == NULL)
+    if(byteswrite == 0)
     exit(97);
 
     close(fdsrc);
