@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
     exit(97);
     }
 
-    while(bytesread = read(fdsrc, buffer, 1024) > 0)
+    while((bytesread = read(fdsrc, buffer, 1024)) > 0)
     {
     bytesread = read(fdsrc, buffer, 1024);
     if(bytesread == -1)
