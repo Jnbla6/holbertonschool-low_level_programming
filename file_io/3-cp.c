@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
     exit(97);
 
     fdsrc = open(argv[1], O_RDONLY);
-    fddst = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC);
+    fddst = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
     bytesread = read(fdsrc, buffer, 1024);
     if(bytesread == -1)
