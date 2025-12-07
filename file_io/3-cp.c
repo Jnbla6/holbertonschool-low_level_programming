@@ -45,7 +45,7 @@ int main(int argc, char *argv[])
     close(fddst);
     exit(98);
     }
-    
+
     if (close(fdsrc) == -1)
     {
         dprintf(2, "Error: Can't close fd %d\n", fdsrc);
@@ -58,7 +58,7 @@ int main(int argc, char *argv[])
         dprintf(2, "Error: Can't close fd %d\n", fddst);
         exit(100);
     }
+}
 
     return (0);
-}
 }
