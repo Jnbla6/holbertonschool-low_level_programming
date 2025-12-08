@@ -18,6 +18,8 @@ if (temp->key == NULL)
 {
 temp->key = strdup(key);
 temp->value = strdup(value);
+if (temp->value == NULL)
+return(0);
 return(1);
 }
 temp = temp->next;
