@@ -16,6 +16,7 @@ while(temp != NULL)
 {
 if (temp->key == NULL)
 {
+free(temp->value);
 temp->key = strdup(key);
 temp->value = strdup(value);
 if (temp->value == NULL)
