@@ -9,12 +9,10 @@
 hash_table_t *hash_table_create(unsigned long int size)
 {
 hash_table_t *new;
-new = malloc(size * sizeof (unsigned long int));
+new = calloc(size * sizeof(unsigned long int));
 if (new == NULL)
 return (NULL);
 
 
 return (new);
-
-
 }
