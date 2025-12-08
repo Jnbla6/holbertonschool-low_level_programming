@@ -9,7 +9,7 @@ hash_node_t *new, *temp;
 if (ht == NULL || key == NULL || value == NULL)
 return (0);
 
-index = key_index(strdup(key), ht->size);
+index = key_index((unsigned char *)key, ht->size);
 
 temp = ht->array[index];
 while(temp != NULL)
