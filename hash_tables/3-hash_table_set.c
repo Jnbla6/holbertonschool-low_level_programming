@@ -1,5 +1,13 @@
 #include "hash_tables.h"
 
+/**
+ * hash_table_set - Adds an element to the hash table.
+ * @ht: The hash table to add the element to.
+ * @key: The key of the element.
+ * @value: The value associated with the key.
+ *
+ * Return: 1 if successful, 0 otherwise.
+ */
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
@@ -12,7 +20,7 @@ return (0);
 index = key_index((unsigned char *)key, ht->size);
 
 temp = ht->array[index];
-while(temp != NULL)
+while (temp != NULL)
 {
 if (strcmp(temp->key, key) == 0)
 {
@@ -20,11 +28,12 @@ free(temp->value);
 temp->key = strdup(key);
 temp->value = strdup(value);
 if (temp->value == NULL)
-return(0);
-return(1);
+return (0);
+return (1);
 }
 temp = temp->next;
 }
+
 
 new = malloc(sizeof(hash_node_t));
 if (new == NULL)
@@ -32,11 +41,11 @@ return (0);
 
 new->key = strdup(key);
 if (new->key == NULL)
-return(0);
+return (0);
 
 new->value = strdup(value);
 if (new->value == NULL)
-return(0);
+return (0);
 
 new->next = ht->array[index];
 ht->array[index] = new;
