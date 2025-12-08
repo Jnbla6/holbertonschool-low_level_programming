@@ -16,3 +16,4 @@ hash = ((hash << 5) + hash) +c;
 
 return (hash);
 }
+ 
