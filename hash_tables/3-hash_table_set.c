@@ -12,6 +12,15 @@ return (0);
 index = key_index(key, ht->size);
 
 temp = ht->array[index];
+while(temp != NULL)
+{
+if (temp->key == NULL)
+{
+temp->key = strdup(key);
+temp->value = strdup(value);
+}
+temp = temp->next;
+}
 
 new = malloc(sizeof(hash_node_t));
 if (new == NULL)
