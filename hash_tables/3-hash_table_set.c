@@ -14,7 +14,7 @@ index = key_index((unsigned char *)key, ht->size);
 temp = ht->array[index];
 while(temp != NULL)
 {
-if (temp->key == NULL)
+if (strcmp(temp->key, key) == 0)
 {
 free(temp->value);
 temp->key = strdup(key);
