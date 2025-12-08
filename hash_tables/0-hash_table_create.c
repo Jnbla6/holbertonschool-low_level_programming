@@ -11,7 +11,7 @@ return (NULL);
 
 newtable->size = size;
 
-newtable->array = malloc(newtable->size * sizeof(hash_node_t));
+newtable->array = calloc(newtable->size, sizeof(hash_node_t*));
 if (newtable->array == NULL)
 return (NULL);
 
