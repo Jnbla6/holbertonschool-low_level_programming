@@ -14,10 +14,11 @@ index = key_index((unsigned char *)key, ht->size);
 temp = ht->array[index];
 while(temp != NULL)
 {
-if (strcmp(temp->key, key) == 0)
+if (temp->key == NULL)
 {
 temp->key = strdup(key);
 temp->value = strdup(value);
+return(1);
 }
 temp = temp->next;
 }
