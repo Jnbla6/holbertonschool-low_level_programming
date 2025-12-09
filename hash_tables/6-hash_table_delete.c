@@ -8,7 +8,7 @@ long unsigned int i = 0;
 for(i = 0; i < ht->size; i++)
 {
 temp = ht->array[i];
-temp = NULL;
+free(temp);
 temp = temp->next;
 }
 }
