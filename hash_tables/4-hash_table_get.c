@@ -12,12 +12,14 @@ index = key_index((unsigned char *)key , ht->size);
 
 temp = ht->array[index];
 
-if(temp->next != NULL)
+if(temp != NULL)
 {
-while(temp->key != key)
+while(strcmp(temp->key, key))
+{
 temp = temp->next;
-if (temp->key == NULL)
+if (temp == NULL)
 return (NULL);
+}
 }
 
 value = temp->value;
