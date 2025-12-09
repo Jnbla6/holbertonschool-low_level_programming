@@ -4,7 +4,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 {
 int index;
 char *value;
-index = key_index((unsigned char *)key , 1024);
+index = key_index((unsigned char *)key , ht->size);
 value = ht->array[index]->value;
 return (value);
 }
