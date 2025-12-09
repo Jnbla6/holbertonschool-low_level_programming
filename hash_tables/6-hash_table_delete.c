@@ -9,5 +9,6 @@ for(i = 0; i < ht->size; i++)
 {
 temp = ht->array[i];
 temp = NULL;
+temp = temp->next;
 }
 }
