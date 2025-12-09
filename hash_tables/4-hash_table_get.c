@@ -16,13 +16,11 @@ if (temp == NULL)
 return (NULL);
 
 if(temp != NULL)
-{
-while(strcmp(temp->key, key) == 0)
+while(strcmp(temp->key, key) != 0)
 {
 temp = temp->next;
 if (temp == NULL)
 return (NULL);
-}
 }
 
 value = temp->value;
