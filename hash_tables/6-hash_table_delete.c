@@ -13,6 +13,7 @@ while (temp != NULL)
 free(temp->key);
 free(temp->value);
 }
+free(temp);
 temp = temp->next;
 }
 }
