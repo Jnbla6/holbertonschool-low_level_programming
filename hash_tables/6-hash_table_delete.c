@@ -26,5 +26,6 @@ temp = link;
 }
 }
 free(ht->array);
+free(ht->size);
 free(ht);
 }
