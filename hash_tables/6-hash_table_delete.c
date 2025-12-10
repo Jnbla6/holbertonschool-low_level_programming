@@ -22,7 +22,7 @@ node = tempnode;
 free(tempnode);
 }
 }
-free(ht->array);
 ht->size = 0;
+free(ht->array);
 free(ht);
 }
