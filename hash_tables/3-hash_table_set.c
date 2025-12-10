@@ -36,8 +36,8 @@ return (0);
 new->key = strdup(key);
 if (new->key == NULL)
 {
-return (0);
 free(new);
+return (0);
 }
 new->value = strdup(value);
 if (new->value == NULL)
