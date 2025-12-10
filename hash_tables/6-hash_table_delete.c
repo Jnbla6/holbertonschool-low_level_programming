@@ -12,7 +12,7 @@ return;
 for (i = 0; i < ht->size; i++)
 {
 node = ht->array[i];
-while (node != NULL && node->next != NULL)
+while (node != NULL || node->next != NULL)
 {
 tempnode = node->next;
 free(node->key);
