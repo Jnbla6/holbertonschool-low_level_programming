@@ -35,10 +35,17 @@ if (new == NULL)
 return (0);
 new->key = strdup(key);
 if (new->key == NULL)
+{
 return (0);
+free(new);
+}
 new->value = strdup(value);
 if (new->value == NULL)
+{
+free(new->key);
+free(new);
 return (0);
+}
 new->next = ht->array[index];
 ht->array[index] = new;
 return (1);
