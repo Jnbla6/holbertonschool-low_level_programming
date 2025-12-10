@@ -20,7 +20,7 @@ free(node->key);
 free(node->value); 
 free(node);        
 }
-temp = node->next;
+node = temp;
 }
 free(ht->array);
 ht->size = 0;
