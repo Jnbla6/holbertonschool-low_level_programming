@@ -12,16 +12,17 @@ return;
 for (i = 0; i < ht->size; i++)
 {
 node = ht->array[i];
+temp = node->next;
 
 while (node != NULL)
 {
-temp = node->next;
 free(node->key);   
 free(node->value); 
 free(node);        
-node = temp;      
 }
+temp = node->next;
 }
 free(ht->array);
+ht->size = 0;
 free(ht);
 }
