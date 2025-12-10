@@ -12,20 +12,13 @@ return;
 for (i = 0; i < ht->size; i++)
 {
 node = ht->array[i];
-while (node != NULL)
+while (node != NULL || node->next->next != NULL)
 {
 tempnode = node->next;
 free(node->key);
 free(node->value);
 free(node);
 node = tempnode;
-free(tempnode);
-if(node->next == NULL)
-{
-free(node->key);
-free(node->value);
-free(node);
-}
 }
 }
 ht->size = 0;
